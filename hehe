@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無關緊要的問題</title>
+</head>
+<body>
+    <h1>回答以下問題：</h1>
+    <form id="questionsForm">
+        <label>1. 你今天穿什麼顏色的襪子？
+            <select name="question1">
+                <option value="white">白色</option>
+                <option value="black">黑色</option>
+                <option value="colorful">彩色</option>
+            </select>
+        </label><br><br>
+
+        <label>2. 你早餐吃了什麼？
+            <select name="question2">
+                <option value="bread">麵包</option>
+                <option value="oatmeal">燕麥</option>
+                <option value="fruit">水果</option>
+            </select>
+        </label><br><br>
+
+        <label>3. 你最喜歡的顏色是什麼？
+            <select name="question3">
+                <option value="blue">藍色</option>
+                <option value="green">綠色</option>
+                <option value="red">紅色</option>
+            </select>
+        </label><br><br>
+
+        <label>4. 你喜歡貓還是狗？
+            <select name="question4">
+                <option value="cat">貓</option>
+                <option value="dog">狗</option>
+                <option value="both">都喜歡</option>
+            </select>
+        </label><br><br>
+
+        <label>5. 你最喜歡的電影是什麼？
+            <select name="question5">
+                <option value="avatar">《阿凡達》</option>
+                <option value="interstellar">《星際效應》</option>
+                <option value="avengers">《復仇者聯盟》</option>
+            </select>
+        </label><br><br>
+
+        <label>6. 你最常用的表情符號是什麼？
+            <select name="question6">
+                <option value="smile">笑臉 😊</option>
+                <option value="heart">愛心 ❤️</option>
+                <option value="cry">哭泣 😢</option>
+            </select>
+        </label><br><br>
+
+        <label>7. 你最喜歡的季節是哪一個？
+            <select name="question7">
+                <option value="spring">春天</option>
+                <option value="summer">夏天</option>
+                <option value="autumn">秋天</option>
+            </select>
+        </label><br><br>
+
+        <label>8. 你最喜歡的水果是什麼？
+            <select name="question8">
+                <option value="apple">蘋果</option>
+                <option value="banana">香蕉</option>
+                <option value="strawberry">草莓</option>
+            </select>
+        </label><br><br>
+
+        <label>9. 你有沒有養植物？
+            <select name="question9">
+                <option value="yes">有</option>
+                <option value="no">沒有</option>
+                <option value="want">想要</option>
+            </select>
+        </label><br><br>
+
+        <label>10. 你最喜歡的冰淇淋口味是什麼？
+            <select name="question10">
+                <option value="chocolate">巧克力</option>
+                <option value="vanilla">香草</option>
+                <option value="strawberry">草莓</option>
+            </select>
+        </label><br><br>
+
+        <button type="button" onclick="showResult()">提交</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function showResult() {
+            const result = Math.random() < 0.5 ? "你是gay" : "你不是gay";
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
